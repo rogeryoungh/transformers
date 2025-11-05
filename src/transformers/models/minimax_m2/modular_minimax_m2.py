@@ -15,7 +15,7 @@
 
 
 from collections.abc import Callable
-from typing import Optional, Unpack
+from typing import Optional
 
 import torch
 from torch import nn
@@ -24,6 +24,7 @@ from ...cache_utils import Cache
 from ...configuration_utils import PretrainedConfig
 from ...modeling_flash_attention_utils import FlashAttentionKwargs
 from ...modeling_utils import ALL_ATTENTION_FUNCTIONS
+from ...processing_utils import Unpack
 from ..glm4_moe.modeling_glm4_moe import (
     Glm4MoeAttention,
     Glm4MoeRotaryEmbedding,
